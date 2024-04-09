@@ -1,0 +1,31 @@
+table:
+  name: personnel_categories
+  schema: public
+array_relationships:
+  - name: personnel_items
+    using:
+      manual_configuration:
+        column_mapping:
+          id: personnel_category_id
+        insertion_order: null
+        remote_table:
+          name: personnel
+          schema: public
+  - name: personnel_items_second
+    using:
+      manual_configuration:
+        column_mapping:
+          id: personnel_category_id_second
+        insertion_order: null
+        remote_table:
+          name: personnel
+          schema: public
+select_permissions:
+  - role: guest
+    permission:
+      columns:
+        - slug
+        - title
+        - id
+      filter: {}
+    comment: ""

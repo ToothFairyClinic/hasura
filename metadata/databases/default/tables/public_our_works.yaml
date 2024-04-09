@@ -1,0 +1,14 @@
+table:
+  name: our_works
+  schema: public
+select_permissions:
+  - role: guest
+    permission:
+      columns:
+        - description
+        - image_after
+        - image_before
+        - title
+        - id
+      filter: {}
+    comment: ""

@@ -1,0 +1,14 @@
+table:
+  name: services
+  schema: public
+select_permissions:
+  - role: guest
+    permission:
+      columns:
+        - description
+        - id
+        - image
+        - mainImage
+        - name
+      filter: {}
+    comment: ""

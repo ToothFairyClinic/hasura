@@ -1,0 +1,11 @@
+table:
+  name: advantages
+  schema: public
+select_permissions:
+  - role: guest
+    permission:
+      columns:
+        - title
+        - id
+      filter: {}
+    comment: ""

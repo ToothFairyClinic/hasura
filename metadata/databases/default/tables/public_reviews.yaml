@@ -1,0 +1,23 @@
+table:
+  name: reviews
+  schema: public
+insert_permissions:
+  - role: guest
+    permission:
+      check: {}
+      columns:
+        - client_name
+        - client_phone
+        - comment
+    comment: ""
+select_permissions:
+  - role: guest
+    permission:
+      columns:
+        - client_name
+        - client_phone
+        - comment
+        - created_at
+        - id
+      filter: {}
+    comment: ""

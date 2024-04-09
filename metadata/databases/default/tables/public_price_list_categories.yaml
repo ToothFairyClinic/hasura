@@ -1,0 +1,22 @@
+table:
+  name: price_list_categories
+  schema: public
+array_relationships:
+  - name: price_list_items
+    using:
+      manual_configuration:
+        column_mapping:
+          id: price_list_category_id
+        insertion_order: null
+        remote_table:
+          name: price_list
+          schema: public
+select_permissions:
+  - role: guest
+    permission:
+      columns:
+        - slug
+        - title
+        - id
+      filter: {}
+    comment: ""

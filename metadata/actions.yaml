@@ -1,0 +1,39 @@
+actions:
+  - name: adminGetMe
+    definition:
+      kind: ""
+      handler: '{{HASURA_ACTIONS_ENDPOINT}}/admin-get-me'
+      forward_client_headers: true
+    permissions:
+      - role: guest
+  - name: adminLogin
+    definition:
+      kind: ""
+      handler: '{{HASURA_ACTIONS_ENDPOINT}}/admin-login'
+      forward_client_headers: true
+    permissions:
+      - role: guest
+  - name: adminRegister
+    definition:
+      kind: synchronous
+      handler: '{{HASURA_ACTIONS_ENDPOINT}}/admin-register'
+      forward_client_headers: true
+      headers:
+        - name: x-toothfairy-secret-key
+          value_from_env: HASURA_TOOTHFAIRY_SECRET
+  - name: cloudinarySignature
+    definition:
+      kind: ""
+      handler: '{{HASURA_ACTIONS_ENDPOINT}}/cloud-signature'
+      forward_client_headers: true
+custom_types:
+  enums: []
+  input_objects:
+    - name: AdminRegisterInput
+    - name: adminLoginInput
+  objects:
+    - name: AdminRegisterOutput
+    - name: adminLoginOutput
+    - name: AdminGetMeOutput
+    - name: CloudinarySignatureOutput
+  scalars: []

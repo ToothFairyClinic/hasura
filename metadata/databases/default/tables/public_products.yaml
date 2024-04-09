@@ -1,0 +1,25 @@
+table:
+  name: products
+  schema: public
+object_relationships:
+  - name: products_category
+    using:
+      manual_configuration:
+        column_mapping:
+          products_category_id: id
+        insertion_order: null
+        remote_table:
+          name: products_categories
+          schema: public
+select_permissions:
+  - role: guest
+    permission:
+      columns:
+        - price
+        - weight
+        - description
+        - image
+        - title
+        - id
+      filter: {}
+    comment: ""
