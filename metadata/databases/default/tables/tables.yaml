@@ -1,5 +1,6 @@
 - "!include public_admin.yaml"
 - "!include public_advantages.yaml"
+- "!include public_home_page.yaml"
 - "!include public_our_works.yaml"
 - "!include public_personnel.yaml"
 - "!include public_personnel_categories.yaml"
