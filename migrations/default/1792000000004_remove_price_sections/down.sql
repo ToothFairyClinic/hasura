@@ -1,0 +1,1 @@
+-- Відкат: відновити description/description_en з резервної копії (home-tz/services_full.json)
