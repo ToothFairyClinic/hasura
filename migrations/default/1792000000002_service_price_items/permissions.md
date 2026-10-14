@@ -6,3 +6,4 @@
 - `price_list`: додати `title_en` до колонок select-дозволу ролі `guest`.
 
 Роль `admin` бачить усе автоматично.
+- `services`: додати `summary` і `summary_en` до колонок select-дозволу ролі `guest`.
