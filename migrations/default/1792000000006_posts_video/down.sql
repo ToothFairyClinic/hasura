@@ -1,0 +1,15 @@
+ALTER TABLE public.posts
+  DROP COLUMN IF EXISTS video,
+  DROP COLUMN IF EXISTS video_poster,
+  DROP COLUMN IF EXISTS video_title,
+  DROP COLUMN IF EXISTS video_title_en,
+  DROP COLUMN IF EXISTS video_description,
+  DROP COLUMN IF EXISTS video_description_en,
+  DROP COLUMN IF EXISTS video_duration,
+  DROP COLUMN IF EXISTS video_width,
+  DROP COLUMN IF EXISTS video_height,
+  DROP COLUMN IF EXISTS video_uploaded_at,
+  DROP COLUMN IF EXISTS video_chapters,
+  DROP COLUMN IF EXISTS video_chapters_en,
+  DROP COLUMN IF EXISTS video_transcript,
+  DROP COLUMN IF EXISTS video_transcript_en;
