@@ -10,5 +10,24 @@ select_permissions:
         - image_before
         - title
         - id
+        - title_en
+        - description_en
+        - slug
+        - slug_en
+        - h1
+        - h1_en
+        - intro
+        - intro_en
+        - content
+        - content_en
+        - image_alt
+        - image_alt_en
+        - seo_title
+        - seo_title_en
+        - seo_description
+        - seo_description_en
+        - is_case_published
+        - case_published_at
+        - updated_at
       filter: {}
     comment: ""
